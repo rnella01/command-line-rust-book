@@ -93,3 +93,7 @@ fn main() {
 // Your program logic starts here...
 }
 ```
+___
+
+## Changes in testing strategy
+- Instead of executing the shell script `mk-outs.sh` as described in the book, I chose to execute variations of `echo` using the `std::process::Command` and comparing its output with corresponding `echor` execution.   
