@@ -1,5 +1,5 @@
-use std::process::Command as std_Command;
 use assert_cmd::Command as assert_Command;
+use std::process::Command as std_Command;
 
 #[test]
 fn runs_ls() {

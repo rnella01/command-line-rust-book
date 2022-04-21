@@ -1,5 +1,9 @@
 # Chapter 2. Test for Echo
 
+## Changes in testing strategy
+- Instead of executing the shell script `mk-outs.sh` as described in the book, I chose to execute variations of `echo` using the `std::process::Command` and comparing its output with corresponding `echor` execution.
+
+___
 - The lack of any return type for `main` implies that the function returns what Rust calls the `unit type`
   - The [unit type](https://doc.rust-lang.org/std/primitive.unit.html) is like an empty value and is signified with a set of empty parentheses: ()
 - The () type has exactly one value (), 
@@ -93,7 +97,3 @@ fn main() {
 // Your program logic starts here...
 }
 ```
-___
-
-## Changes in testing strategy
-- Instead of executing the shell script `mk-outs.sh` as described in the book, I chose to execute variations of `echo` using the `std::process::Command` and comparing its output with corresponding `echor` execution.   
